@@ -1,0 +1,5 @@
+docker info
+docker swarm init
+docker stack deploy --compose-file docker-stack.yml vote
+docker stack services vote
+docker stack rm vote

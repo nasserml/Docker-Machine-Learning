@@ -1,0 +1,18 @@
+
+                <html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>019 What Ports To Use_</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p><strong>What Ports To Use?</strong></p><p><br></p><p>Hi all!</p><p><br></p><p>We have seen ports mentioned a few times for Docker, and how we need to choose a port along with mapping the container port to it. There are some default ports, for example port 5000 with flask and we will also see port 80 used often. Standard HTTP and HTTPS ports would be 80 and 443 which might look familiar or might come up often.</p><p><br></p><p>For further information this article can be helpful:</p><p><br></p><p><a href="https://www.stackrox.com/post/2017/08/hardening-docker-containers-and-hosts-against-vulnerabilities-a-security-toolkit/" rel="noopener noreferrer" target="_blank">https://www.stackrox.com/post/2017/08/hardening-docker-containers-and-hosts-against-vulnerabilities-a-security-toolkit/</a></p><p><br></p><p><br></p><p><br></p><p><br></p><p>When using docker -p it will help us create our port rules but we also have the expose command for the following:</p><p><br></p><p>EXPOSE &lt;port&gt; [&lt;port&gt;/&lt;protocol&gt;...]</p><p>The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime. You can specify whether the port listens on TCP or UDP, and the default is TCP if the protocol is not specified.</p><p><br></p><p><a href="https://docs.docker.com/engine/reference/builder/" rel="noopener noreferrer" target="_blank">https://docs.docker.com/engine/reference/builder/</a></p><p><br></p><p>For a general rule do not or please be careful when mapping any ports below 1024 with a container because Docker does allow containers to be mapped to privileged ports. Please only ensure necessary ports are available for Docker containers.</p><p><br></p><p>For further information related to networking for Docker containers this can be helpful:</p><p><br></p><p><a href="https://docs.docker.com/config/containers/container-networking/" rel="noopener noreferrer" target="_blank">https://docs.docker.com/config/containers/container-networking/</a></p><p><a href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers" rel="noopener noreferrer" target="_blank"><strong>https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers</strong></a></p><p><br></p><p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
+                

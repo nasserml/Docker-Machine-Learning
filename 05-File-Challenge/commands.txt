@@ -1,1 +1,2 @@
 docker build -t filechallenge:1.0 .
+docker cp filechallenge:/Users/nasserml/Desktop/test .
